@@ -1,54 +1,51 @@
-# React + TypeScript + Vite
+# Dukaan UI Clone
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a frontend clone of the Dukaan app built using TypeScript and React with Tailwind CSS. The project ensures a responsive and visually appealing UI.
 
-Currently, two official plugins are available:
+## 🛠 Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **TypeScript** – Ensures type safety and improved development experience
+- **React** – Component-based UI development
+- **Tailwind CSS** – Utility-first CSS framework for responsive design
 
-## Expanding the ESLint configuration
+## 📌 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Fully responsive UI
+- Styled with Tailwind CSS for a sleek design
+- Developed using TypeScript for type safety
+- Component-based architecture with React
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🚀 Getting Started
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### Prerequisites
+Ensure you have the following installed:
+- Node.js (v14+ recommended)
+- npm or yarn package manager
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### Installation
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+1. Clone the repository:
+   ```sh
+   git clone https://github.com/shivaKotagiri/dukaan-ui.git
+   cd dukaan-ui
+   ```
+
+2. Install dependencies:
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+
+3. Run the development server:
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. Open your browser and navigate to:
+   ```sh
+   http://localhost:3000
+   ```
+
