@@ -2,7 +2,7 @@ function SideBar() {
   return (
     <>
       <aside id="default-sidebar" className="fixed top-0 left-0 z-40 w-56 h-screen transition-transform -translate-x-full md:translate-x-0" aria-label="Sidebar">
-        <div className="h-full px-3 py-4 overflow-y-auto bg-[#1E2640]">
+        <div className="h-full px-3 py-4 overflow-y-auto bg-[#1E2640] flex flex-col">
             <ul className="space-y-2 font-medium">
               <li className="flex">
                 <div>
@@ -99,7 +99,7 @@ function SideBar() {
                   </a>
               </li>
             </ul>
-            <div className="bg-[#353C53] rounded-md mt-70">
+            <div className="bg-[#353C53] rounded-md mt-auto">
               <a href="#" className="flex items-center p-1 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700 group">
               <div className="ml-2 bg-[#4A5065] p-1.5 rounded-sm">
                 <svg width="24" height="20" viewBox="0 0 24 20" fill="none" xmlns="http://www.w3.org/2000/svg">
